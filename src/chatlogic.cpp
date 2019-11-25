@@ -25,7 +25,7 @@ ChatLogic::ChatLogic()
 
 ChatLogic::~ChatLogic()
 {
-    /*                                                                                  // ************************ Task 3. **********************************
+    /*                                                                                  // ************************
     // delete chatbot instance
     delete _chatBot;
 
@@ -148,7 +148,7 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename)
                             auto parentNode = std::find_if(_nodes.begin(), _nodes.end(), [&parentToken](std::unique_ptr<GraphNode>& node) { return node -> GetID() == std::stoi(parentToken -> second); });
                             auto childNode = std::find_if(_nodes.begin(), _nodes.end(), [&childToken](std::unique_ptr<GraphNode>& node) { return node -> GetID() == std::stoi(childToken -> second); });
 
-                            // create new edge                                          // ************************* Task 3. *********************************              
+                            // create new edge                                          // *************************               
                             std::unique_ptr<GraphEdge> edge = std::make_unique<GraphEdge>(id);  // must make unique
                             edge -> SetChildNode((*childNode).get());                   // read from exclusive
                             edge -> SetParentNode((*parentNode).get());                 // read from exclusive

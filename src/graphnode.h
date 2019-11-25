@@ -42,7 +42,7 @@ public:
     void AddEdgeToParentNode(GraphEdge *edge);
     void AddEdgeToChildNode(std::unique_ptr<GraphEdge> edge);               // ****************************** Task 3. ****************************************
 
-    void MoveChatbotHere(ChatBot chatbot);                                  // ******************************* Task 3. ***************************************
+    void MoveChatbotHere(ChatBot chatbot);                                  // *******************************
 
     void MoveChatbotToNewNode(GraphNode *newNode);
 };

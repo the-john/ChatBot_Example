@@ -33,7 +33,7 @@ void GraphNode::AddEdgeToChildNode(std::unique_ptr<GraphEdge> edge)             
     _childEdges.push_back(std::move(edge));                                     // modify for exclusive ownership
 }
 
-void GraphNode::MoveChatbotHere(ChatBot chatbot)                                // ************************** Task 3. ****************************************
+void GraphNode::MoveChatbotHere(ChatBot chatbot)                                // ************************** 
 {
     _chatBot = std::move(chatbot);                                              // modify for exclusive ownership
     _chatBot.SetCurrentNode(this);                                              // cont.
@@ -42,7 +42,7 @@ void GraphNode::MoveChatbotHere(ChatBot chatbot)                                
 void GraphNode::MoveChatbotToNewNode(GraphNode *newNode)
 {
     ChatBot movedchatbot = ChatBot("../images/chatbot.png");                    // *************************** Task 4. ***************************************
-    newNode -> MoveChatbotHere(std::move(_chatBot));                            // *************************** Task 4. ***************************************
+    newNode -> MoveChatbotHere(std::move(_chatBot));                            // *************************** 
 }
 
 GraphEdge *GraphNode::GetChildEdgeAtIndex(int index)

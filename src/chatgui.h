@@ -15,7 +15,7 @@ private:
     wxBitmap _image;
 
 
-                                                                // ******************************** Task 1. Edit. ********************************************
+                                                                // ********************************
     std::unique_ptr<ChatLogic> _chatLogic;                      // unique_ptr used to make exclusive resource
 
 public:
@@ -24,7 +24,7 @@ public:
     ~ChatBotPanelDialog();
 
     // getter / setter
-    ChatLogic *GetChatLogicHandle() { return _chatLogic.get(); }// *********************** Task 1.  Need to change because of unique_ptr, line 21 ************
+    ChatLogic *GetChatLogicHandle() { return _chatLogic.get(); }// *********************** 
 
     // events
     void paintEvent(wxPaintEvent &evt);
